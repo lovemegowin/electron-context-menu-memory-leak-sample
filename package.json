@@ -1,0 +1,13 @@
+{
+  "name": "electron-memory-leak-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron --inspect=9229 ."
+  },
+  "dependencies": {
+    "electron": "^31.0.2",
+    "electron-context-menu": "3.1.2"
+  }
+}
