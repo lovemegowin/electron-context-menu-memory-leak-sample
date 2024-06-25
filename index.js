@@ -35,6 +35,8 @@ ipcMain.on('open-new-window', () => {
       contextIsolation: false,
     },
   });
-
+  newWindow.on('closed', () => {
+      console.log(newWindow.isDestroyed())
+  })
   newWindow.loadFile('newWindow.html');
 });
